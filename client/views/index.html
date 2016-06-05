@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <title>Renter Helper</title>
     <script type="text/javascript" src="../vendors/angular.min.js"></script>
-    <script type="text/javascript" src="../vendors/bootstrap.min.js"></script>
     <script type="text/javascript" src="../vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="../scripts/app.js"></script>
     <script type="text/javascript" src="../scripts/controllers/maincontroller.js"></script>
+    <script type="text/javascript" src="../scripts/controllers/tenantcontroller.js"></script>
+    <script type="text/javascript" src="../scripts/controllers/logincontroller.js"></script>
+    <script type="text/javascript" src="../scripts/controllers/landlordcontroller.js"></script>
+    <script type="text/javascript" src="../scripts/controllers/propertycontroller.js"></script>
+    <script type="text/javascript" src="../vendors/bootstrap.css"></script>
+    <script type="text/javascript" src="../vendors/bootstrap.min.css"></script>
     <link rel="stylesheet" href="../styles/stylesheet.css"/>
 </head>
 
-<body>
+<body ng-app="myApp">
 
 <div class="container">
     <div class='app-body'>
         <div class='app-content'>
-          <h1>HELLO!!!!</h1>
+          <h1>Renter Helper</h1>
             <ng-view></ng-view>
         </div>
     </div>
