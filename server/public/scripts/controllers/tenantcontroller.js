@@ -1,6 +1,6 @@
-myApp.controller('TenantController', ['$scope', '$location', '$http', 'DataFactory', function($scope, $location, $http, DataFactory) {
+myApp.controller('TenantController', ['$scope', '$location', '$http', function($scope, $location, $http) {
 
-    // $scope.dataFactory = DataFactory;
+
 
 
 }]);
