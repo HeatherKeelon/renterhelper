@@ -1,109 +1,39 @@
-<div class="section">
+<div class="form">
     <h1>Tenant Rating</h1>
-    <div class="panel-group" ui-state="myAccordion" ui-default="1">
-        <div class="panel panel-default">
-            <div class="panel-heading" ui-set="{'myAccordion': 1}">
-                <h4 class="panel-title">
-                    Basic Info
-                </h4>
-            </div>
-            <div ui-if="myAccordion == 1">
-                <div class="panel-body">
-                    <form>
-                        <fieldset>
-                            <!--name:-->
-                            <div class="form-group">
-                                <label for="firstName">First name:</label>
-                                <input class="form-control" type="text" ng-model="info.firstName"
-                                       id="firstName" placeholder="First Name" />
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last name:</label>
-                                <input class="form-control" type="text" ng-model="info.lastName"
-                                       id="lastName" placeholder="Last Name" />
-                            </div>
-                            <div class="form-group">
-                                <!--phone:-->
-                                <label for="phoneNumber">Phone number:</label>
-                                <input class="form-control" type="tel" ng-model="info.phoneNumber"
-                                       id="phoneNumber" />
-                            </div>
-                            <div class="form-group">
-                                <!--email address:-->
-                                <label for="emailAddress">Email address:</label>
-                                <input class="form-control" type="email" ng-model="info.emailAddress"
-                                       id="emailAddress" placeholder="Email Address" />
-                            </div>
-                        </fieldset>
-                    </form>
+        <form>
+            <fieldset>
+                <div class="form-group">
+                    <label for="rent">How often did the tenant pay their rent late?</label>
+                    <input class="form-control" type="text" id="rent" placeholder="" />once, every month, never, ?
                 </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" ui-set="{'myAccordion': 2}">
-                <h4 class="panel-title">
-                    DOB/Height/Weight
-                </h4>
-            </div>
-            <div ui-if="myAccordion == 2">
-                <div class="panel-body">
-                    <form>
-                        <fieldset>
-                            <div class="form-group">
-                                <!--DOB - calendar dropdown-->
-                                <label for="dateOfBirth">Date of birth:</label>
-                                <input class="form-control" type="date" ng-model="info.dateOfBirth"
-                                       id="dateOfBirth" />
-                            </div>
+                <div class="form-group">
+                    <label for="neighbors">Was the tenant(s) respectful of the neighbors?</label>
+                    <input class="form-control" type="text" id="neighbors" placeholder="" />Strongly agree <–> Strongly disagree
+                </div>
+                <div class="form-group">
+                    <label for="property">Was the tenant(s) respectful of the property?</label>
+                    <input class="form-control" type="text" id="property" placeholder="" />Strongly agree <–> Strongly disagree
+                </div>
+                <div class="form-group">
+                    <label for="contact">How many times per month did the tenant(s) contact you?</label>
+                    <input class="form-control" type="text" id="contact" placeholder="" />never, once, every week, everyday, a few times
+                </div>
+                <div class="form-group">
+                    <label for="deposit">Did you have to keep a portion of the tenant(s) security deposit?</label>
+                    <input class="form-control" type="text" id="deposit" placeholder="" />Y/N
+                    If yes, why? provide list of canned reasons
+                </div>
+                <div class="form-group">
+                    <label for="court">Did your tenant(s) take you to court at any point during their tenure?</label>
+                    <input class="form-control" type="text" id="court" placeholder="" />Y/N
+                </div>
+                <div class="form-group">
+                    <label for="lease">Did the tenant(s) violate the terms of their lease during their tenure?</label>
+                    <input class="form-control" type="text" id="lease" placeholder="" />Y/N
+                    If yes, why?
+                </div>
+            </fieldset>
 
-                            <div class="form-group">
-                                <p>Height:</p>
-                                <label for="heightFeet">Feet:</label>
-                                <input class="form-control" type="number" ng-model="height.feet"
-                                       id="heightFeet" />
-                            </div>
-                            <div class="form-group">
-                                <label for="heightInches">Inches:</label>
-                                <input class="form-control" type="number" ng-model="height.inches"
-                                       id="heightInches" />
-                                <!--weight:-->
-                            </div>
-                            <div class="form-group">
-                                <label for="weightPounds">Weight (pounds):</label>
-                                <input class="form-control" type="number" ng-model="info.weightPounds"
-                                       id="weightPounds" />
-                            </div>
-
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" ui-set="{'myAccordion': 3}">
-                <h4 class="panel-title">
-                    Emergency Contact
-                </h4>
-            </div>
-            <div ui-if="myAccordion == 3">
-                <div class="panel-body">
-                    <form>
-                        <fieldset>
-                            <div class="form-group">
-                                <label for="emergencyContactName">Name:</label>
-                                <input class="form-control" type="text" ng-model="info.emergencyContactName"
-                                       id="emergencyContactName" placeholder="Emergency Contact Name" />
-                            </div>
-                            <div class="form-group">
-                                <label for="emergencyContactNumber">Phone number:</label>
-                                <input class="form-control" type="tel" ng-model="info.emergencyContactNumber"
-                                       id="emergencyContactNumber" />
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="btn btn-block btn-default" ng-click="saveTenantRating()">Submit</button>
+            <button class="btn btn-block btn-default" ng-click="saveTenantRating()">Submit</button>
+        </form>
 </div>
