@@ -10,6 +10,9 @@
   "author": "Mahad Ibrahim, Kelly Clausen, Moni Francesca, Eddie Glenn, Quinn Carr, Tom Halloin, Heather Lutz, Khalid Mohammed Adam, Michaeline",
   "license": "ISC",
   "dependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
