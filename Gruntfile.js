@@ -56,7 +56,7 @@ module.exports = function (grunt) {
                 // SCRIPTS
                 expand: true,
                 cwd: "client/scripts/",
-                src: ["*.js"],
+                src: ["*/**.js"],
                 "dest": "server/public/scripts"
             }
         },
