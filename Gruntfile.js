@@ -23,7 +23,8 @@ module.exports = function (grunt) {
 
                 cwd: "node_modules/",
                 src: [
-                    "angular/angular.min.js",
+                    "angular/angular.js",
+                    "angular-route/angular-route.js",
                     "bootstrap/dist/css/bootstrap.min.css"
                 ],
                 "dest": "server/public/vendors/"

@@ -1,0 +1,61 @@
+<div class="form">
+    <h1>Landlord Rating</h1>
+    <form>
+        <fieldset>
+            Note: These are questions for verified tenants of a specific unit (permit).
+            <div class="form-group">
+                <label for="general">How long does it take for your landlord (property manager) to respond to general inquiries?</label>
+                <input class="form-control" type="text" id="general" placeholder="" />
+            </div>
+            <div class="form-group">
+                <label for="emergencies">How long does it take for your landlord (property manager) to respond to emergencies?</label>
+                <input class="form-control" type="text" id="emergencies" placeholder="" />
+            </div>
+            <div class="form-group">
+                <label for="functional">Were all your major appliances and fixtures functioning properly during your tenure in the unit (permit)?</label>
+                <input class="form-control" type="text" id="functional" placeholder="" />Tie to legal standards.
+            </div>
+            <div class="form-group">
+                <label for="entry">How many times per month did your landlord (property manager) enter your unit?</label>
+                <input class="form-control" type="text" id="entry" placeholder="" />Rarely, more than 3 times, more than 10 times
+            </div>
+            <div class="form-group">
+                <label for="credit">Did your landlord do a credit check?</label>
+                <input class="form-control" type="text" id="credit" placeholder="" />Y/N
+                If yes, why? provide list of canned reasons
+            </div>
+            <div class="form-group">
+                <label for="background">Did your landlord do a background check?</label>
+                <input class="form-control" type="text" id="background" placeholder="" />Y/N
+            </div>
+            <div class="form-group">
+                <label for="guarantor">Did your landlord ask for a guarantor?</label>
+                <input class="form-control" type="text" id="guarantor" placeholder="" />Y/N
+                If yes, why?
+            </div>
+            <div class="form-group">
+                <label for="fee">Did your landlord charge you an application fee?</label>
+                <input class="form-control" type="text" id="fee" placeholder="" />If yes, how much? _______
+                If yes, why?
+            </div>
+            <div class="form-group">
+                <label for="increase">How often was your rent increased during your tenure?</label>
+                <input class="form-control" type="text" id="increase" placeholder="" />Every year, never, every other year
+                If yes, why?
+            </div>
+            <div class="form-group">
+                <label for="cost">How much was your rent?</label>
+                <input class="form-control" type="text" id="cost" placeholder="" />Check against the median rent for the unit type.
+                If yes, why?
+            </div>
+            <div class="form-group">
+                <label for="quality">My rent was appropriate given the quality of the property and service provided by my landlord.</label>
+                <input class="form-control" type="text" id="quality" placeholder="" />Strongly agree <–-> Strongly disagree
+                If yes, why?
+            </div>
+
+        </fieldset>
+
+        <button class="btn btn-block btn-default" ng-click="saveTenantRating()">Submit</button>
+    </form>
+</div>

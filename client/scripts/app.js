@@ -19,7 +19,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
             templateUrl: '/views/templates/property.html',
             controller: 'PropertyController'
         })
-        .otherwise({
-            redirectTo: 'index'
-        });
+        .otherwise('login');
+
 }]);
