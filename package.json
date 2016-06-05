@@ -8,5 +8,8 @@
     "start": "node app.js"
   },
   "author": "Mahad Ibrahim, Kelly Clausen, Moni Francesca, Eddie Glenn, Quinn Carr, Tom Halloin, Heather Lutz, Khalid Mohammed Adam, Michaeline",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  }
 }
